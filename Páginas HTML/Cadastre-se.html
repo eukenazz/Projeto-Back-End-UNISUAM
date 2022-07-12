@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/materialize.min.css">
+    <link rel="stylesheet" href="../CSS/css-principal.css">
+
+    <title>Cadastre-se</title>
+</head>
+<body class="grey lighten-5">
+
+    <header>
+        <div class="row">
+            <div id="top-nav" class="col l12 m12 s12 red darken-2">
+                <div class="container">
+                    <a href="../index.html">Home</a>
+                    <span>|</span>
+                    <a href="Login.html">Login</a>
+                </div>
+            </div>
+
+            <div id="bot-nav" class="col l12 m12 s12 white z-depth-2">
+                <div class="container">
+                    <a href="../index.html"><img id="brand-logo" class="left" src="../Images/telecall-logo.png"></a>
+                    <a id="bot-nav_dropdown" class="bot-nav_links right dropdown-trigger hide-on-med-and-down" href="#" data-target="dropdown-menu">O Projeto<i id="arrow-dropdown" class="material-icons tiny">arrow_drop_down</i></a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger right hide-on-large-only"><i class="material-icons">menu</i></a>
+                    <div>
+                        <ul id="dropdown-menu" class="dropdown-content">
+                            <li><a class="center-align" href="Modelo de Dados.html">Modelo de Dados</a></li>
+                            <li><a class="center-align" href="Queries SQL.html">Queries SQL</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="slide-out" class="sidenav hide-on-large-only">
+                            <li><a href="Login.html">Login</a></li>
+                            <li><a href="Cadastre-se.html">Cadastre-se</a></li>
+                            <li><a class="center-align" href="Modelo de Dados.html">Modelo de Dados</a></li>
+                            <li><a class="center-align" href="Queries SQL.html">Queries SQL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="sign-up-principal" class="row">
+            <div class="container content white z-depth-1">
+                <div class="row">
+                    <form id="form_sign-up" method="POST" action="../PHP/Connections BD/include-BD.php" class="col l10 m10 s12">
+                        <div class="row">
+                            <div id="required-text" class="col l12 m12 s12"><p>*Campos obrigatórios</p></div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input placeholder="Digite seu nome" id="first-name" name="first-name" type="text" class="validate input-form required" required>
+                                <label for="first-name">*Nome</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input id="last-name" name="last-name" type="text" class="validate input-form required" required>
+                                <label for="last-name">*Sobrenome</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input id="birth-date" name="birth-date" type="date" class="validate input-form" min="1900-01-01" max="2022-12-31" required>
+                                <label for="birth-date">*Data de Nascimento</label>
+                            </div>
+    
+                            <div class="input-field col l3 m6 s12">
+                                <input placeholder="000.000.000 00" id="cpf" name="cpf" type="text" class="validate input-form required" required>
+                                <label for="cpf">*CPF</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input id="email" name="email" type="email" class="validate input-form required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                <label for="email" data-position="bottom" data-tooltip="O email deve conter '@' e um domínio válido" class="tooltipped">*E-mail</label>
+                            </div>
+    
+                            <div class="input-field col l3 m6 s12">
+                                <input id="mothers-name" name="mothers-name" type="text" class="validate input-form required" required>
+                                <label for="mothers-name">*Nome da mãe</label>
+                            </div>
+    
+                            <div class="input-field col l2 m6 s12">
+                                <input id="cep" name="cep" type="text" class="validate input-form required" required>
+                                <label for="cep">*CEP</label>
+                            </div>
+    
+                            <div class="input-field col l3 m6 s12">
+                                <input placeholder="Rua" id="street" name="street" type="text" class="validate input-form">
+                            </div>
+    
+                            <div class="input-field col l2 m6 s12">
+                                <input id="address-number" name="address-number" type="text" class="validate input-form">
+                                <label for="address-number">Número</label>
+                            </div>
+    
+                            <div class="input-field col l5 m6 s12">
+                                <input id="address2" name="address2" type="text" class="validate input-form">
+                                <label for="address2">Complemento</label>
+                            </div>
+    
+                            <div class="input-field col l2 m6 s12">
+                                <input placeholder="Bairro" id="district" name="district" type="text" class="validate input-form">
+                            </div>
+    
+                            <div class="input-field col l3 m6 s12">
+                                <input placeholder="Cidade" id="city" name="city" type="text" class="validate input-form">
+                            </div>
+    
+                            <div class="input-field col l1 m6 s12">
+                                <input placeholder="UF" id="uf" name="uf" type="text" class="validate input-form">
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input placeholder="(00) 00000 0000" id="cellphone" name="cellphone" type="tel" class="validate input-form" required>
+                                <label for="cellphone">*Celular</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input placeholder="(00) 0000 0000" id="phone" name="phone" type="text" class="validate input-form">
+                                <label for="phone">Telefone Fixo</label>
+                            </div>
+    
+                            <div class="input-field col l3 m6 s12">
+                                <input id="user-name" name="user-name" type="text" class="validate input-form required" required>
+                                <label for="user-name" data-position="bottom" data-tooltip="Apenas os caracteres especiais - e _ são permitidos" class="tooltipped">*Nome de Usuário</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input id="password" name="password" type="password" class="validate input-form required" minlength="6" required>
+                                <label for="password" data-position="bottom" data-tooltip="A senha deve conter no mínimo 6 caracteres" class="tooltipped">*Senha</label>
+                            </div>
+    
+                            <div class="input-field col l4 m6 s12">
+                                <input id="repeat-password" name="repeat-password" type="password" class="validate input-form required" required>
+                                <label for="repeat-password" data-position="bottom" data-tooltip="A senha deve ser a mesma" class="tooltipped">*Confirmar Senha</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="col l2 m2 hide-on-small-only">
+                        <p class="body-text">Já está cadastrado? Faça login:</p>
+                        <button data-target="modal-login-sign-in" class="btn-flat blue darken-2 modal-trigger waves-effect waves-light white-text">Login</button>
+                    </div>
+                    
+                    <div class="row">
+                        <div id="modal-login-sign-in" class="modal modal-fixed-footer col l3">
+                            <div class="modal-content">
+                                <form id="login-sign-in" action="../PHP/Connections BD/login-BD.php" method="POST">
+                                    <div class="input-field col l12">
+                                        <input id="user" name="user" type="text" class="validate login-form required" required>
+                                        <label for="user">Usuário</label>
+                                    </div>
+
+                                    <div class="input-field col l12">
+                                        <input id="user-password" name="user-password" type="password" class="validate login-form required" required>
+                                        <label for="user-password">Senha</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="cancel-login" class="modal-close waves-effect waves-black btn-flat red white-text">Cancelar</button>
+                                <button type="submit" form="login-sign-in" class="waves-effect waves-black btn-flat blue darken-1 white-text">Acessar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="buttons-div" class="col l12">
+                        <button id="cancel_sign-up" class="waves-effect waves-black btn-flat red white-text">Cancelar</button>
+                        <button type="submit" form="form_sign-up" id="sign-up" class="waves-effect waves-black btn-flat green white-text">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Javascript/jquery-3.6.0.min.js"></script>
+    <script src="../Javascript/materialize.min.js"></script>
+    <script src="../Javascript/javascript-principal.js"></script>
+    <script src="../Javascript/jquery.mask.js"></script>
+    <script src="../Javascript/form-validate.js"></script>
+</body>
+</html>

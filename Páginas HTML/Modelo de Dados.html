@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/materialize.min.css">
+    <link rel="stylesheet" href="../CSS/css-principal.css">
+
+    <title>Modelo de Dados</title>
+</head>
+<body class="grey lighten-5">
+    <header>
+        <div class="row">
+            <div id="top-nav" class="col l12 m12 s12 red darken-2">
+                <div class="container">
+                    <a href="Login.html">Login</a>
+                    <span>|</span>
+                    <a href="Cadastre-se.html">Cadastre-se</a>
+                </div>
+            </div>
+
+            <div id="bot-nav" class="col l12 m12 s12 white z-depth-2">
+                <div class="container">
+                    <a href="../index.html"><img id="brand-logo" class="left" src="../Images/telecall-logo.png"></a>
+                    <a id="bot-nav_dropdown" class="bot-nav_links right dropdown-trigger hide-on-med-and-down" href="#" data-target="dropdown-menu">O Projeto<i id="arrow-dropdown" class="material-icons tiny">arrow_drop_down</i></a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger right hide-on-large-only"><i id="mobile-menu" class="material-icons">menu</i></a>
+                    <div>
+                        <ul id="dropdown-menu" class="dropdown-content">
+                            <li><a class="center-align" href="Modelo de Dados.html">Modelo de Dados</a></li>
+                            <li><a class="center-align" href="Queries SQL.html">Queries SQL</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="mobile-nav" class="sidenav hide-on-large-only">
+                            <li><a href="Login.html">Login</a></li>
+                            <li><a href="Cadastre-se.html">Cadastre-se</a></li>
+                            <li><a href="Modelo de Dados.html">Modelo de Dados</a></li>
+                            <li><a href="Queries SQL.html">Queries SQL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="container">
+                <div class="col l12 m12 s12 content white z-depth-1 center-align">
+                    <h4>Modelo de Dados!</h4><br>
+                    <p class="body-text">Abaixo, o modelo de dados utilizado no projeto.</p>
+                    <img class="center-align" src="../Images/Diagrama BD.png">
+                    <p class="body-text">A concepção deste modelo de dados foca em ser simples e direto, onde há uma
+                        tabela de usuário que contém todas as suas informações relevantes e pertinentes como nome,
+                        data de nascimento, número de celular, etc. e uma para gravação de logs.
+                    </p>
+                    <p class="body-text">A tabela de logs obtém a id de usuário da tabela de usuário, para criar
+                        este relacionamento entre elas e assim obter suas informações. A ideia foi gravar informações
+                        importantes como eventos dentro do sistema e horários.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Javascript/jquery-3.6.0.min.js"></script>
+    <script src="../Javascript/materialize.min.js"></script>
+    <script src="../Javascript/javascript-principal.js"></script>
+</body>
+</html>

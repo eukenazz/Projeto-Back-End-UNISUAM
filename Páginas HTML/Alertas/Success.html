@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../../CSS/materialize.min.css">
+    <link rel="stylesheet" href="../../CSS/css-principal.css">
+
+    <title>Sucesso</title>
+</head>
+<body class="grey lighten-5">
+
+    <script src="../../Javascript/jquery-3.6.0.min.js"></script>
+    <script src="../../Javascript/materialize.min.js"></script>
+    <script src="../../Javascript/sweetalert.min.js"></script>
+    <script src="../../Javascript/javascript-principal.js"></script>
+
+    <script>
+        swal({
+            title: "Sucesso!", 
+            text: "Usuário cadastrado com sucesso!",
+            icon: "success", 
+            button: "Ir para Login"}).then((value)=>
+            {(window.location.href = "../Login.html")});
+    </script>
+</body>
+</html>

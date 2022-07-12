@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto Mono';
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: lightgrey;
+    border-radius: 40px;
+}
+
+.body-text {
+    font-size: 15px;
+    color: black;
+}
+
+#top-nav a, span, .material-icons#light-mode, #dark-mode{
+    color: white;
+}
+
+#bot-nav {
+    height: 70px;
+}
+
+#bot-nav img {
+    margin-top: 7px;
+    margin-right: 25px;
+}
+
+.bot-nav_links {
+    font-size: large;
+    color: black;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 10px;
+}
+
+.center-card{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::placeholder {
+    color: lightslategray;
+}
+
+#sign-up {
+    color: white;
+    cursor: pointer;
+}
+
+#required-text {
+    opacity: 60%;
+    color: gray;
+    font-size: small;
+}
+
+#visibility {
+    margin-top: 25px;
+}
+
+.social-media_icons {
+    padding-right: 2px;
+}
+
+#light-mode {
+    display: none;
+}
+
+#light-mode, #dark-mode {
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+#sign-up-principal {
+    position: static;
+    width: 80%;
+}
+
+#container-brand-logo {
+    margin-left: 200px;
+}
+
+#modal-login-sign-in {
+    height: 40%;
+    margin-left: 200px;
+}
+
+#buttons-div {
+    margin-top: -40px;
+}
+
+.btn-flat, .content {
+    border-radius: 20px;
+}
+
+#login-div { 
+    padding-top: 65px;
+    padding-left: 65px;
+}
+#dashboard-admin {
+    font-size: 12px;
+}
+
+#confirm-exclude, #confirm-exclude a {
+    display: none;
+}
